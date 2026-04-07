@@ -55,6 +55,13 @@ fun ListaContenedores(padding: PaddingValues) {
                 Text("Item Horizontal")
             }
         }
+        item {
+            Tarjeta("3. Botón Simple", "Un botón dentro de nuestra tarjeta.", Color(0xFFFFF3E0)) {
+                Button(onClick = { /* Acción vacía */ }) {
+                    Text("Click aquí")
+                }
+            }
+        }
     }
 }
 
