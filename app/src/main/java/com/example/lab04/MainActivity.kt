@@ -42,15 +42,17 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ListaContenedores(padding: PaddingValues) {
     LazyColumn(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(padding)
-            .padding(16.dp),
+        modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp),
         verticalArrangement = Arrangement.spacedBy(12.dp)
     ) {
         item {
-            Tarjeta("1. LazyColumn", "Este es el contenedor principal con scroll vertical.", Color(0xFFE3F2FD)) {
-                Text("Elemento dentro de la lista")
+            Tarjeta("1. LazyColumn", "Contenedor con scroll vertical.", Color(0xFFE3F2FD)) {
+                Text("Elemento con scroll vertical")
+            }
+        }
+        item {
+            Tarjeta("2. LazyRow", "Scroll horizontal para elementos.", Color(0xFFFCE4EC)) {
+                Text("Item Horizontal")
             }
         }
     }
